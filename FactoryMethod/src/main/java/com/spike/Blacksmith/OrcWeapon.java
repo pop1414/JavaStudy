@@ -20,4 +20,8 @@ public class OrcWeapon implements Weapon {
     }
 
     // TODO 待实现toString()
+    @Override
+    public String toString() {
+        return "an " + weaponType + " OrcWeapon";
+    }
 }
