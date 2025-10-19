@@ -7,5 +7,5 @@ package com.spike.Blacksmith;
  * @date 2025/10/19
  */
 public interface Weapon {
-    WeaponType weaponType();
+    public abstract WeaponType weaponType();
 }
