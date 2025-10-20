@@ -6,15 +6,15 @@ package com.spike.vehicle.factory;
  * @author Ayanami
  * @date 2025/10/20
  */
-public class BWMCar implements Vehicle {
+public class BMWCar implements Vehicle {
 
     @Override
     public String drive() {
-        return "Driving a TeslaBicycle";
+        return "Driving a BMW Car";
     }
 
     @Override
     public String toString() {
-        return "BWMCar";
+        return "BMWCar";
     }
 }
