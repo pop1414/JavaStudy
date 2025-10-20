@@ -8,7 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>FactoryMethod</artifactId>
+    <artifactId>factory-method</artifactId>
     <packaging>jar</packaging>
 
     <name>FactoryMethod</name>
