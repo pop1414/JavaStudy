@@ -1,0 +1,51 @@
+@startuml
+package com.spike.vehicle.factory {
+  class App {
+    + main(args : String[]) {static}
+  }
+  interface Vehicle {
+    + drive() : String {abstract}
+  }
+  enum VehicleType {
+    + CAR {static}
+    + BICYCLE {static}
+    + MOTORCYCLE {static}
+    + UNDEFINED {static}
+    - title : String
+    + toString() : String
+    + valueOf(name : String) : VehicleType {static}
+    + values() : VehicleType[] {static}
+  }
+  interface VehicleFactory {
+    + createVehicle(type : VehicleType) : Vehicle {abstract}
+  }
+  class BMWFactory {
+    + createVehicle(type : VehicleType) : Vehicle
+  }
+  class TeslaFactory {
+    + createVehicle(type : VehicleType) : Vehicle
+  }
+  class BMWCar {
+    + drive() : String
+    + toString() : String
+  }
+  class BMWMotorcycle {
+    + drive() : String
+    + toString() : String
+  }
+  class TeslaCar {
+    + drive() : String
+    + toString() : String
+  }
+  class TeslaBicycle {
+    + drive() : String
+    + toString() : String
+  }
+}
+BMWFactory ..|> VehicleFactory
+TeslaFactory ..|> VehicleFactory
+BMWCar ..|> Vehicle
+BMWMotorcycle ..|> Vehicle
+TeslaCar ..|> Vehicle
+TeslaBicycle ..|> Vehicle
+@enduml
