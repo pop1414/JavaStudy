@@ -4,6 +4,7 @@ package com.spike.coffee;
  * 指挥者类负责安排复杂对象的建造次序
  * 其与抽象建造者（BeverageBuilder）之间存在关联关系，因此可以无缝搭配任何ConcreteBuilder（例如折扣版），实现可替换
  * 只关心“建造次序/配方”
+ * 隔离了用户与生产过程，Director指挥Builder，客户端（用户）只需要知道具体建造者的类型，就可以之间返回一个Product
  *
  * @author Ayanami
  * @date 2025/10/22
