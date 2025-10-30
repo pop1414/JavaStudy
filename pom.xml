@@ -32,6 +32,7 @@
         <module>bridge</module>
         <module>composite</module>
         <module>decorator</module>
+        <module>facade</module>
     </modules>
 
 
