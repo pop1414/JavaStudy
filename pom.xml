@@ -12,13 +12,13 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
         <!-- Dependencies -->
         <junit.version>5.11.4</junit.version>
         <lombok.version>1.18.38</lombok.version>
         <!-- Plugins -->
-        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
     </properties>
 
@@ -33,6 +33,7 @@
         <module>composite</module>
         <module>decorator</module>
         <module>facade</module>
+        <module>proxy</module>
     </modules>
 
 
