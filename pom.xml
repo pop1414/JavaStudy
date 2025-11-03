@@ -34,6 +34,8 @@
         <module>decorator</module>
         <module>facade</module>
         <module>proxy</module>
+        <module>chain-of-responsibility</module>
+        <module>chain</module>
     </modules>
 
 
